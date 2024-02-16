@@ -38,6 +38,12 @@
             align-items: center; /* Align items vertically */
         }
 
+        .agent-info {
+            display: flex; /* Use flexbox for alignment */
+            flex-direction: column; /* Stack items vertically */
+            align-items: flex-start; /* Align items to the start */
+        }
+
         p.instructions {
             margin-top: 40px; /* Increase margin between instructions and agent strings */
             text-align: left; /* Align instructions to the left */
@@ -49,16 +55,22 @@
     <nav>
         <ul>
             <li>
-                <span>1. Mozilla/5.0 (X11; CrOS aarch64 13099.85.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4899.73</span>
-                <span>Safari/537.36</span>
+                <div class="agent-info">
+                    <div>1. Mozilla/5.0 (X11; CrOS aarch64 13099.85.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4899.73</div>
+                    <div>Safari/537.36</div>
+                </div>
             </li>
             <li>
-                <span>2. Mozilla/5.0 (X11; CrOS aarch64 14092.77.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4896.80</span>
-                <span>Safari/537.36</span>
+                <div class="agent-info">
+                    <div>2. Mozilla/5.0 (X11; CrOS aarch64 14092.77.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4896.80</div>
+                    <div>Safari/537.36</div>
+                </div>
             </li>
             <li>
-                <span>3. Mozilla/5.0 (X11; CrOS aarch64 14150.77.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4949.0</span>
-                <span>Safari/537.36</span>
+                <div class="agent-info">
+                    <div>3. Mozilla/5.0 (X11; CrOS aarch64 14150.77.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4949.0</div>
+                    <div>Safari/537.36</div>
+                </div>
             </li>
         </ul>
         <h1>Osmium - Instructions</h1>
