@@ -33,12 +33,16 @@
             margin-bottom: 20px; /* Increase margin between agent strings */
             padding-bottom: 20px; /* Add spacing between agent strings */
             border-bottom: 1px solid #fff; /* Add border line */
+        }
+
+        .agent-info {
             display: flex; /* Use flexbox for alignment */
             justify-content: space-between; /* Evenly distribute items */
+            align-items: center; /* Align items vertically */
         }
 
         .split {
-            display: inline-block; /* Ensure each part of the agent string is on a new line */
+            margin-left: 10px; /* Add space between the parts of the agent string */
         }
 
         p.instructions {
@@ -52,16 +56,22 @@
     <nav>
         <ul>
             <li>
-                <span>1. Mozilla/5.0 (X11; CrOS aarch64 13099.85.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4899.73</span>
-                <span class="split">Safari/537.36</span>
+                <div class="agent-info">
+                    <span>1. Mozilla/5.0 (X11; CrOS aarch64 13099.85.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4899.73</span>
+                    <span class="split">Safari/537.36</span>
+                </div>
             </li>
             <li>
-                <span>2. Mozilla/5.0 (X11; CrOS aarch64 14092.77.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4896.80</span>
-                <span class="split">Safari/537.36</span>
+                <div class="agent-info">
+                    <span>2. Mozilla/5.0 (X11; CrOS aarch64 14092.77.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4896.80</span>
+                    <span class="split">Safari/537.36</span>
+                </div>
             </li>
             <li>
-                <span>3. Mozilla/5.0 (X11; CrOS aarch64 14150.77.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4949.0</span>
-                <span class="split">Safari/537.36</span>
+                <div class="agent-info">
+                    <span>3. Mozilla/5.0 (X11; CrOS aarch64 14150.77.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4949.0</span>
+                    <span class="split">Safari/537.36</span>
+                </div>
             </li>
         </ul>
         <h1>Osmium - Instructions</h1>
