@@ -18,30 +18,40 @@
         h1 {
             font-size: 2.5em;
             margin-bottom: 20px;
+            text-align: center; /* Align Osmium at the top */
         }
 
         ul {
             list-style-type: none;
             padding: 0;
             margin-bottom: 20px;
+            text-align: left; /* Align agent strings to the left */
         }
         
         li {
             font-size: 1.2em;
             margin-bottom: 10px;
+            border-bottom: 1px solid #fff; /* Add border to separate agent strings */
+            padding-bottom: 10px; /* Add spacing between agent strings */
+        }
+
+        p.instructions {
+            margin-top: 50px;
+            text-align: left; /* Align instructions to the left */
         }
     </style>
 </head>
 <body>
+    <h1>Osmium</h1> <!-- Align Osmium at the top -->
     <nav>
-        <h1>Osmium</h1>          
         <ul>
             <li>1. Mozilla/5.0 (X11; CrOS aarch64 13099.85.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4899.73 Safari/537.36</li>
             <li>2. Mozilla/5.0 (X11; CrOS aarch64 14092.77.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4896.80 Safari/537.36</li>
             <li>3. Mozilla/5.0 (X11; CrOS aarch64 14150.77.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4949.0 Safari/537.36</li>
         </ul>
         <h1>Osmium - Instructions</h1>
-        <p>This is where you can provide instructions about how to use the agent strings. Make sure the text is aligned properly and formatted neatly.</p>
+        <p class="instructions">This is where you can provide instructions about how to use the agent strings. Make sure the text is aligned properly and formatted neatly.</p>
     </nav>
 </body>
 </html>
+
