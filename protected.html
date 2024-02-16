@@ -3,29 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protected Website</title>
+    <title>Password Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #BD2E3E;
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        input[type="password"] {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #passcode-error {
+            color: red;
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <div id="passcode-form">
-        <h2>Enter Passcode to Access the Website</h2>
-        <form id="passcode-form">
-            <input type="password" id="passcode-input" placeholder="Enter Passcode">
-            <button type="button" onclick="checkPasscode()">Submit</button>
-        </form>
-        <p id="passcode-error" style="color: red; display: none;">Incorrect passcode. Please try again.</p>
-    </div>
-
-    <div id="content" style="display: none;">
-        <h1>Welcome to the Protected Website!</h1>
-        <p>This is the content of the website.</p>
-    </div>
+    <h1>Enter Passcode to Access the Website</h1>
+    <form id="passcode-form">
+        <input type="password" id="passcode-input" placeholder="Enter Passcode">
+        <button type="button" onclick="checkPasscode()">Submit</button>
+    </form>
+    <p id="passcode-error">Incorrect passcode. Please try again.</p>
 
     <script>
         function checkPasscode() {
             var passcode = document.getElementById('passcode-input').value;
             if (passcode === 'masoniscool') {
-                document.getElementById('passcode-form').style.display = 'none';
-                document.getElementById('content').style.display = 'block';
+                window.location.href = 'index.html'; // Redirect to the main page
             } else {
                 document.getElementById('passcode-error').style.display = 'block';
             }
